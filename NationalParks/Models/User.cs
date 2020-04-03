@@ -1,5 +1,4 @@
-  
-namespace TravelBlog.Models
+  namespace NationalParks.Models
 {
   public class User
   {
