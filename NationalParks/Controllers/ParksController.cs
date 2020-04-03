@@ -44,14 +44,6 @@ namespace NationalParks.Controllers
       }
       return query.ToList();
     }
-    // GET api/Parks
-    // [HttpGet]
-    // public ActionResult<IEnumerable<Park>> Get()
-    // {
-    //   return _db.Parks.ToList();
-    // }
-
-    // POST api/parks
     [HttpPost]
     public void Post([FromBody] Park park)
     {
@@ -59,7 +51,7 @@ namespace NationalParks.Controllers
       _db.SaveChanges();
     }
 
-    // GET api/parks/5
+    // GET api/parks/1
     [HttpGet("{id}")]
     public ActionResult<Park> Get(int id)
     {
