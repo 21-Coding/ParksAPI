@@ -20,21 +20,21 @@ _An API that lets you query National Parks by location, Name and amount of Rock 
 ## Specification user stories:
 | Specification | Example Input | Example Output |
 | ------------- |:-------------:| -------------------:|
-| If user visits '/' root route, the application displays a splash page with links to '/Reviews', '/Parks'  and '/Users' | user visits '/' route | application displays homepage |
+| If user visits '/' root route, the application displays a splash page with links to '/Parks', '/Parks'  and '/Users' | user visits '/' route | application displays homepage |
 | Application allows a user to register for an account with Identity | user clicks "login/register" option on splash page, then completes form at '/Account/Register' | application creates new user account and redirects to '/Login' |
 | Application allows a registered user to login | registered user clicks "log in" option at '/Account' | application redirects to '/Account/Login' |
 | Application allows a registered user to logout | registered user clicks "logout" option at '/Account' | application logs out of user account |
-| Only registered, logged-in users are able to create, update, and delete reviews | user is not logged in and/or not registered and clicks "add review", "edit review", or "delete review" | user redirected to login page |
-If user visits '/Parks' route, the application displays all Parks in the database, ordered from highest rated to lowest rated | user visits '/Parks' | application displays list of all reviews in order of rating |
+| Only registered, logged-in users are able to create, update, and delete Parks | user is not logged in and/or not registered and clicks "add review", "edit review", or "delete review" | user redirected to login page |
+If user visits '/Parks' route, the application displays all Parks in the database, ordered from highest rated to lowest rated | user visits '/Parks' | application displays list of all Parks in order of rating |
 | If a registered user clicks "add new destination" link at '/Parks', the application redirects to a form ('/Parks/Create') for adding a new destination | registered user clicks "add new destination" | the application redirects to form at 'Parks/Create' |
 | When a registered user submits the new destination form, the application adds the new destination to the Parks table of the travel database and redirects to '/Parks' | registered user submits new destination form | the application adds new destination to Parks table and redirects to '/Parks' |
 | A registered user can delete a destination from the list of all Parks | registered user selects "delete destination" option | application deletes destination from database |
 | A registered user can edit a destination from the list of all Parks | registered user selects "edit destination" | application redirects to edit form |
-| If user visits '/Reviews' route, the application displays all reviews in the database, ordered from highest rated to lowest rated | user visits '/Reviews' | application displays list of all reviews in order of rating |
-| If a registered user clicks "add new review" link at '/Reviews', the application redirects to a form ('/Reviews/Create') for adding a new review | registered user clicks "add new review" | the application redirects to form at 'Reviews/Create' |
-| When a registered user submits the new review form, the application adds the new review to the reviews table of the travel database and redirects to '/Reviews' | registered user submits new review form | the application adds new review to reviews table and redirects to '/Reviews' |
-| A registered user can delete a review from the list of all reviews | registered user selects "delete review" option | application deletes review from database |
-| A registered user can edit a review from the list of all reviews | registered user selects "edit review" | application redirects to edit form |
+| If user visits '/Parks' route, the application displays all Parks in the database, ordered from highest rated to lowest rated | user visits '/Parks' | application displays list of all Parks in order of rating |
+| If a registered user clicks "add new review" link at '/Parks', the application redirects to a form ('/Parks/Create') for adding a new review | registered user clicks "add new review" | the application redirects to form at 'Parks/Create' |
+| When a registered user submits the new review form, the application adds the new review to the Parks table of the travel database and redirects to '/Parks' | registered user submits new review form | the application adds new review to Parks table and redirects to '/Parks' |
+| A registered user can delete a review from the list of all Parks | registered user selects "delete review" option | application deletes review from database |
+| A registered user can edit a review from the list of all Parks | registered user selects "edit review" | application redirects to edit form |
 
 ## Setup/Installation Requirements
 
