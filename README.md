@@ -2,7 +2,7 @@
 
 
 
-#### By: **Mariam Alaeddin**, April 2, 2020
+#### By: **Mariam Alaeddin**, April 3, 2020
 
 ## Description
 
@@ -17,7 +17,7 @@ _An API that lets you query National Parks by location, Name and amount of Rock 
 | /api/parks/1 | PUT | ( "parkId": 1, "name": "Crater Lake National Park", "description": "It's HOT!" ) |
 | /api/parks/1 | DELETE | (  ) |
 
-## Specification user stories:
+## Specs user stories:
 | Specification | Example Input | Example Output |
 | ------------- |:-------------:| -------------------:|
 | If user visits '/' root route, the application displays a splash page with links to '/Parks', '/Parks'  and '/Users' | user visits '/' route | application displays homepage |
@@ -110,7 +110,7 @@ _Run this MVC application by entering the following command in Terminal (macOS) 
 ## Technologies Used
 
 * Git
-* C#/.NET
+* C#
 * Visual Studio Code 1.43.1
 * dotnet script 0.50.1
 * MySQL 8.0.15
