@@ -13,7 +13,7 @@ namespace NationalParks.Services
 {
   public interface IUserService
   {
-    User Authenticate(string username, string password);
+    User Authenticate(string email, string password);
     IEnumerable<User> GetAll();
   }
 
@@ -23,7 +23,7 @@ namespace NationalParks.Services
 
     private List<User> _users = new List<User> 
     {
-      new User { Id = 1, FirstName = "Mariam", LastName = "A", Username = "mariam", Password = "Password123" },
+      new User { Id = 1, FirstName = "Mariam", LastName = "A", Email = "mariam", Password = "Password123" },
     };
 
     public UserService(IOptions<AppSettings> appSettings)
@@ -31,9 +31,9 @@ namespace NationalParks.Services
       _appSettings = appSettings.Value;
     }
 
-    public User Authenticate(string username, string password)
+    public User Authenticate(string email, string password)
     {
-      var user = _users.SingleOrDefault(x => x.Username == username && x.Password == password);
+      var user = _users.SingleOrDefault(x => x.Email == email && x.Password == password);
 
       if (user == null)
       {
