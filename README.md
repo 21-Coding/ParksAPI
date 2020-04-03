@@ -8,6 +8,15 @@
 
 _An API that lets you query National Parks by location, Name and amount of Rock climbing routes, campgrounds and general stores._
 
+## Endpoint Specs
+| Endpoint | Http Action | Return Data |
+| -------- | :---------: | :---------: |
+| /api/parks | GET | List ( "parkId": 1, "name": "Crater Lake National Park", etc. ) |
+| /api/parks | POST | New Park ( "parkId": 5, "name": "Death Valley National Park", etc) |
+| /api/parks/1 | GET | ( "parkId": 1, "name": "Crater Lake National Park", etc. ) |
+| /api/parks/1 | PUT | ( "parkId": 1, "name": "Crater Lake National Park", "description": "It's HOT!" ) |
+| /api/parks/1 | DELETE | (  ) |
+
 ## Specification user stories:
 | Specification | Example Input | Example Output |
 | ------------- |:-------------:| -------------------:|
