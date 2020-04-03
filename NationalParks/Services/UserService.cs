@@ -23,7 +23,7 @@ namespace NationalParks.Services
 
     private List<User> _users = new List<User> 
     {
-      new User { Id = 1, FirstName = "Mariam", LastName = "A", Email = "mariam", Password = "Password123" },
+      new User { Id = 1, FirstName = "Mariam", LastName = "A", Email = "mariam@mariam.com", Password = "Password123" },
     };
 
     public UserService(IOptions<AppSettings> appSettings)
