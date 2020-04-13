@@ -89,23 +89,22 @@ _Enter the following commands in Terminal (macOS) or PowerShell (Windows):_
 
 _Confirm that you have navigated to the NationalParks directory (e.g., by entering the command_ ``pwd`` _in Terminal)._
 
-## JWT Authentication
+## JWT Authentication in Postman
 
-* POST to `/users` to create a new user.
+* Download [Postman](https://www.postman.com/downloads/)
+* Create POST request with the following info and syntax:
+  ``{
+    "username": "mariam@mariam.com"
+    "password": "Password123"
+  }``
+* Hit Send
+* Copy your "access token" from the body
+* Click Authorization tab
+* Select "Bearer Token" authorization type.
+* Paste your token
+* Click the orange Preview Request button to see a    temporary header has been added under the Headers tab. This temporary header is not saved with your request or collection
 
-The body must have:
 
-* `email`: Your email
-* `password`: Your password
-
-
-It returns the following:
-
-```json
-{
-  "id_token": {jwt},
-  "access_token": {jwt}
-}
 
 ## Clone the NationalParksApi repository and run the NationalParksAPI
 
