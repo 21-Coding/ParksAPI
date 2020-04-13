@@ -6,7 +6,7 @@
 
 ## Description
 
-_An API that lets you query National Parks by location, Name and amount of Rock climbing routes, campgrounds and general stores._
+_An API that lets you query National Parks. Find out how many climbs you can squeeze into your trip, find out how many campgrounds there are and places to grab last minute "left-behinds".  You can also search our database by city, state and name!_
 
 ## Endpoint Specs
 | Endpoint | Http Action | Return Data |
@@ -88,6 +88,24 @@ _Enter the following commands in Terminal (macOS) or PowerShell (Windows):_
 * ``cd NationalParksApi.Solution/NationalParks`
 
 _Confirm that you have navigated to the NationalParks directory (e.g., by entering the command_ ``pwd`` _in Terminal)._
+
+## JWT Authentication
+
+* POST to `/users` to create a new user.
+
+The body must have:
+
+* `email`: Your email
+* `password`: Your password
+
+
+It returns the following:
+
+```json
+{
+  "id_token": {jwt},
+  "access_token": {jwt}
+}
 
 ## Clone the NationalParksApi repository and run the NationalParksAPI
 
