@@ -22,6 +22,11 @@ namespace NationalParks.Controllers
     {
       var query = _db.Parks.AsQueryable();
 
+
+      if (name != null)
+      {
+        query = query.Where(entry => entry.Name == name);
+      }
       if (city != null)
       {
         query = query.Where(entry => entry.City == city);
